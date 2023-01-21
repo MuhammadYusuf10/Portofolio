@@ -1,4 +1,44 @@
 .navbar{
-    border-bottom: 2px solid black ;
+    border-bottom: 1px solid black ;
+}
+
+section{
+    padding-top: 90px ;
+}
+
+.btn.button{
+    border: 3px solid black;
+    border-radius: 24px;
+}
+
+#home h1{
+    font-size: 40px;
+}
+
+#home h3{
+    font-size: 30px;
+}
+
+.btn.button:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+}
+
+#arrow{
+    animation: 2s upDown infinite;
+}
+
+
+@keyframes upDown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
