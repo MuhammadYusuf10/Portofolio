@@ -12,3 +12,20 @@ function toggleDetail(e){
 
     $(detail).slideToggle()
 }
+
+
+function onFormSubmit(e){
+    e.preventDefault()
+    const email = $("#inp_email")
+    const pesan = $("#inp_pesan")
+
+    if(!$(email).val()){
+        alert("Email is required")
+    } else if(!$(pesan).val()){
+
+    }else{
+        alert("form submitted")
+        $(email).val("")
+        !$(pesan).val("")
+    }
+}

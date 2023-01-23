@@ -122,6 +122,19 @@ font-size: 24px;
     content: 'Web Project';
 }
 
+#contact::before{
+    content: 'Contact Me';
+}
+
+.contact-form{
+    border: 3px solid black;
+    padding: 22px;
+}
+
+.form-label{
+    font-weight: 700;
+}
+
 @keyframes upDown{
     0%{
         transform: translateY(0);
