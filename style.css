@@ -1,10 +1,11 @@
 .navbar{
-    border-bottom: 1px solid black ;
+    border-bottom: 3px solid orange ;
 }
 
 section{
-    padding-top: 100px ;
+    padding-top: 50px ;
     position: relative;
+
 }
 
 .btn.button{
@@ -18,6 +19,14 @@ section{
 
 #home h3{
     font-size: 30px;
+}
+
+.home img{
+    width: 100%;
+}
+
+.home .arrow img{
+    width: 60px;
 }
 
 .btn.button:hover, .btn.button.active{
@@ -54,12 +63,14 @@ section::before{
     font-size: 52px;
     opacity: 0.25;
     font-weight: 700;
-    top: 20px;
-    left: -30px;
+    top: -10px;
+    left: -10px;
+   
 }
 
 .about::before{
     content: 'About';
+    
 }
 
 
@@ -135,6 +146,15 @@ font-size: 24px;
     font-weight: 700;
 }
 
+
+@media(max-width:576px) {
+    section::before{
+        left: 1px;
+        font-size: 50px;
+}
+    
+}
+
 @keyframes upDown{
     0%{
         transform: translateY(0);
@@ -146,4 +166,7 @@ font-size: 24px;
         transform: translateY(0);
     }
 }
+
+
+
 
